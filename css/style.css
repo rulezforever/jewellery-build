@@ -1430,6 +1430,9 @@ img {
 
 .modal__form {
   padding: 0 45px; }
+  @media (max-width: 1023px) {
+    .modal__form {
+      padding: 0 51px; } }
   @media (max-width: 767px) {
     .modal__form {
       padding: 0 15px; } }
@@ -1469,6 +1472,8 @@ img {
   margin-bottom: 45px; }
   @media (max-width: 767px) {
     .modal__link {
+      width: 58%;
+      margin-left: 42%;
       margin-bottom: 34px; } }
   .modal__link:hover, .modal__link:focus {
     color: #1d1613; }
@@ -1490,10 +1495,16 @@ img {
     width: 18px;
     height: 2px;
     background-color: #1d1613; }
+    @media (max-width: 1023px) {
+      .modal__close::before, .modal__close::after {
+        width: 25px;
+        height: 3px; } }
     @media (max-width: 767px) {
       .modal__close::before, .modal__close::after {
         top: 20px;
-        right: 15px; } }
+        right: 15px;
+        width: 18px;
+        height: 2px; } }
   .modal__close::before {
     transform: rotate(45deg);
     box-shadow: none; }
