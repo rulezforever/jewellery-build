@@ -391,12 +391,12 @@ img {
   .main-nav--opened,
   .main-nav--nojs {
     background: #a87b62;
-    min-height: 778px; } }
+    min-height: 100vh; } }
 
 @media (max-width: 767px) {
   .main-nav--opened,
   .main-nav--nojs {
-    min-height: 684px; } }
+    min-height: 100vh; } }
 
 .main-nav__wrapper {
   display: flex;

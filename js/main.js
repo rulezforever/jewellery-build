@@ -10,6 +10,11 @@ navMain.classList.remove('main-nav--opened');
 
 navToggle.addEventListener('click', function () {
   navMain.classList.toggle('main-nav--opened');
+  if (navMain.classList.contains('main-nav--opened')) {
+    pageBody.style.overflow = 'hidden';
+  } else {
+    pageBody.style.overflow = 'auto';
+  }
 });
 
 // ------------faq menu---------------
