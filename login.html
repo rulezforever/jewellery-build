@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jewellery - Log in Page</title>
+  <link rel="preload" href="fonts/poppins-bold.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/poppins-bold.woff" as="font" crossorigin>
+  <link rel="preload" href="fonts/poppins-medium.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/poppins-medium.woff" as="font" crossorigin>
+  <link rel="preload" href="fonts/poppins-regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/poppins-regular.woff" as="font" crossorigin>
+  <link rel="preload" href="fonts/cormorant-garamond-bold.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/cormorant-garamond-bold.woff" as="font" crossorigin>
+  <link rel="preload" href="fonts/cormorant-garamond-regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/cormorant-garamond-regular.woff" as="font" crossorigin>
+  <link rel="preload" href="fonts/cormorant-garamond-italic.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/cormorant-garamond-italic.woff" as="font" crossorigin>
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
+
+<body class="page-body">
+<section class="modal-page wrapper">
+  <div class="modal__wrapper">
+    <picture>
+      <source media="(max-width: 767px)" type="image/webp"
+        srcset="img/sweet-mobile@1x.webp 1x, img/sweet-mobile@2x.webp 2x">
+      <source media="(max-width: 767px)" type="image/jpg"
+        srcset="img/sweet-mobile@1x.jpg 1x, img/sweet-mobile@2x.jpg 2x">
+      <source media="(max-width: 1023px)" type="image/webp"
+        srcset="img/sweet-tablet@1x.webp 1x, img/sweet-tablet@2x.webp 2x">
+      <source media="(max-width: 1023px)" type="image/jpg"
+        srcset="img/sweet-tablet@1x.jpg 1x, img/sweet-tablet@2x.jpg 2x">
+      <source type="image/webp" srcset="img/sweet-desktop@1x.webp 1x, img/sweet-desktop@2x.webp 2x">
+      <img class="modal__image" src="img/sweet-desktop@1x.jpg" srcset="img/sweet-desktop@2x.jpg 2x" width="430"
+        height="138" alt="Sweet photo">
+    </picture>
+
+    <h2 class="modal__title">Log In</h2>
+    <form class="modal__form" id="login" method="post" action="https://echo.htmlacademy.ru">
+      <fieldset>
+        <div class="modal__form-wrapper">
+          <label class="modal__input-label visually-hidden" for="your_email">Your E-mail</label>
+          <input id="your_email" type="email" name="your_email" placeholder="Your E-mail" required>
+          <label class="modal__input-label visually-hidden" for="password">Password</label>
+          <input id="password" type="password" name="password" placeholder="Password" required>
+          <a class="modal__link" href="#">Forgot your password?</a>
+          <button class="modal__button button" type="submit">Log In</button>
+          <p class="modal__text">Don’t have an account?<a href="#">Sign up</a></p>
+        </div>
+      </fieldset>
+    </form>
+
+    <div class="modal__logo">
+      <svg class="main-nav__logo-icon" width="66" height="66">
+        <use xlink:href="img/svg-sprite.svg#logo"></use>
+      </svg>
+    </div>
+    <a href="main.html" class="modal__back" >Back to main page<a>
+  </div>
+</section>
+</body>
+
+</html>
